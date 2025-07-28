@@ -2,10 +2,10 @@ const fs = require("fs");
 
 fs.readFile("ex.txt", "utf-8", function(err, data) {
     if (err) {
-        console.error("❌ Error reading file:", err.message);
+        console.error("Error reading file:", err.message);
         return;
     }
-    console.log("📄 File content:", data);
+    console.log("File content:", data);
 });
 
 console.log("HI there");
