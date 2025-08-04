@@ -1,6 +1,6 @@
-const fs = require("fs");
+import { readFile } from "fs";
 
-fs.readFile("ex.txt", "utf-8", function(err, data) {
+readFile("ex.txt", "utf-8", function(err, data) {
     if (err) {
         console.error("Error reading file:", err.message);
         return;
