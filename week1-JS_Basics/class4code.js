@@ -29,3 +29,17 @@ function callback() {
 
 console.log(d);
 d.then(callback);
+
+//await function 
+function dummyAsyncFxn() {
+    let p = new Promise(function(resolve) {
+        //do some async logic here
+        resolve("Hello!!")
+    });
+    return p;
+}
+async function main() {
+    const value = await dummyAsyncFxn();
+    console.log(value);
+}
+main();
