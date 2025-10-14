@@ -13,13 +13,13 @@ function isOldEnough(req, res, next) {
     }
 }
 
-app.get("/ride3", function(req,res) {
+app.get("/ride3", isOldEnough, function(req,res) {
     res.json({
         msg: "You have successfully riden the ride 3."
     })
 });
 
-app.get("/ride4", function(req,res){
+app.get("/ride4", isOldEnough, function(req,res){
     res.json({
         msg: "You have successfully riden the ride 4"
     })
