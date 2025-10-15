@@ -31,7 +31,7 @@ app.use(function(req, res, next) {
 
 app.get('/user', function(req,res) {
     res.status(200).json({
-        name: 'Admin'
+        name: 'Adminn'
     });
 });
 
