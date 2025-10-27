@@ -1,7 +1,14 @@
 <html>
+    <script>
+        function populateDiv() {
+            const element = document.getElementById("finalSum");
+            element.innerHTML = "hello world";
+        }
+    </script>
     <body>
         <input type="text" placeholder="First Number"></input> <br></br>
         <input type="text" placeholder="Second Number"></input> <br></br>
-        <button> Calculate Sum </button> <br></br>
+        <button onclick="populateDiv()"> Calculate Sum </button> <br></br>
+        <div id="finalSum"></div>
     </body>
 </html>
