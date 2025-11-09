@@ -4,11 +4,11 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://nigamman:Rishi20@100xdevs.bgvyutl.mongodb.net/mongo_assign_one');
 
 //define schema
-const AdminSchema = new mongoose.AdminSchema({
+const AdminSchema = new mongoose.Schema({
     username: String,
     password: String
 });
-const UserSchema = new mongoose.UserSchema({
+const UserSchema = new mongoose.Schema({
     username: String,
     password: String,
     purchasedCourses: [{
