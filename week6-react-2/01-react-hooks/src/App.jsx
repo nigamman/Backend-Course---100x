@@ -1,26 +1,19 @@
-import React, {useState} from "react"
+import React from "react";
 
-function App() { 
-  const [title, setTitle] = useState("I am admin");
+// ⬇️ Change ONLY this import depending on what you want to practice
+//import KeyReact from "./topics/KeyReact";
+//import ReactReturn from "./topics/ReactReturn";
+import KeyReact from "./topics/KeyReact";
 
-  function updateTitle() {
-    setTitle("my name is "+ Math.random());
-  }
 
+
+function App() {
   return (
-    <div>
-      <button onClick={updateTitle}>Update the title</button>
-      <Header title={title}></Header> {/* dynamic header */}
-      <br></br>
-      <Header title= "heading-2"></Header>{/* static header */}
-      <Header title= "heading-3"></Header>
+    <div style={{ padding: "20px" }}>
+      {/* ⬇️ Change this component name based on the import above */}
+      <KeyReact />
     </div>
-  )                                                         
+  );
 }
-const Header = React.memo(function Header({title}) {
-  return <div>
-    {title}
-  </div>
-})
 
 export default App;
