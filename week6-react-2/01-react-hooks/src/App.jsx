@@ -4,7 +4,8 @@ import React from "react";
 //import KeyReact from "./topics/KeyReact";
 //import ReactReturn from "./topics/ReactReturn";
 //import KeyReact from "./topics/KeyReact";
-import WrapperComponents from "./topics/WrapperComponents";
+//import UseEffect from "./topics/UseEffect";
+import UseEffect from "./topics/UseEffect";
 
 
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <div style={{ padding: "20px" }}>
       {/* ⬇️ Change this component name based on the import above */}
-      <WrapperComponents />
+      <UseEffect />
     </div>
   );
 }
