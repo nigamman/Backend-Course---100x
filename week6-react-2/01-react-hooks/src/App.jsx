@@ -5,7 +5,7 @@ import React from "react";
 //import ReactReturn from "./topics/ReactReturn";
 //import KeyReact from "./topics/KeyReact";
 //import UseEffect from "./topics/UseEffect";
-import UseEffect2 from "./topics/UseEffect2";
+import UseCallback from "./topics/UseCallback";
 
 
 
@@ -14,7 +14,7 @@ function App() {
   return (
     <div style={{ padding: "20px" }}>
       {/* ⬇️ Change this component name based on the import above */}
-      <UseEffect2 />
+      <UseCallback />
     </div>
   );
 }
