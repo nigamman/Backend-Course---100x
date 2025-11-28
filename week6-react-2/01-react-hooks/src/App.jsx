@@ -9,13 +9,16 @@ import React from "react";
 //import UseCallback from "./topics/UseCallback";
 //import UseMemo from "./topics/UseMemo";
 //import UseCallback from "./topics/UseCallback";
-import UseRef from "./topics/UseRef";
+//import UseRef from "./topics/UseRef";
+//import Ass1UseMemo from "./assignment/Ass1UseMemo";
+import Ass2UseMemo from "./assignment/Ass2UseMemo";
+import Ass3UseMemo from "./assignment/Ass3UseMemo";
 
 function App() {
   return (
     <div style={{ padding: "20px" }}>
       {/* ⬇️ Change this component name based on the import above */}
-      <UseRef />
+      <Ass3UseMemo />
     </div>
   );
 }
