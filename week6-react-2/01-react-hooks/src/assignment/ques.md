@@ -14,10 +14,11 @@
 ### Assignment 3
 
 - You have been given a list of items you shopped from the grocery store.
-
 - You need to calculate the total amount of money you spent.
 
 ## useCallback - Assignment
 
 ### Assignment 1
+
+- Create a counter component with increment and decrement functions. Pass these function to a child component which has buttons to perform with increment and decrement actions. Use `useCallback` to ensure that these functions are not recreated on every render.
 
