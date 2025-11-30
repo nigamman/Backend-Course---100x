@@ -1,6 +1,6 @@
 
 
-export function Dashboard() {
+export default function Dashboard() {
   return (
     <div>
       Welcome to Dashboard

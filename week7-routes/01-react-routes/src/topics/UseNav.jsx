@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
-import { Dashboard } from "../components/Dashboard"
-import { Landing } from "../components/Landing"
+import  Dashboard from "../components/Dashboard"
+import  Landing  from "../components/Landing"
 
 function UseNav() {
   return(
