@@ -1,5 +1,5 @@
 import {useRecoilValue, RecoilRoot} from 'recoil'
-import { networkAtom,jobsAtom, messagingAtom, notificationAtom, totalNotificationSelector} from "./atoms";
+import { notificationAtom, totalNotificationSelector} from "./atoms";
 
 
 function App() {
@@ -9,25 +9,32 @@ function App() {
 }
 
 function MainApp() {
-  const networkNotificationCount = useRecoilValue(networkAtom);
-  const jobsNotificationCount = useRecoilValue(jobsAtom);
-  const messagingNotificationCount = useRecoilValue(messagingAtom);
-  const notifyNotificationCount = useRecoilValue(notificationAtom);
-  const totalNotificationCount = useRecoilValue(totalNotificationSelector);
+  const all = useRecoilValue(notificationAtom);
+  const total = useRecoilValue(totalNotificationSelector);
+
+  // const networkNotificationCount = useRecoilValue(networkAtom);
+  // const jobsNotificationCount = useRecoilValue(jobsAtom);
+  // const messagingNotificationCount = useRecoilValue(messagingAtom);
+  // const notifyNotificationCount = useRecoilValue(notificationAtom);
+  // const totalNotificationCount = useRecoilValue(totalNotificationSelector);
+
+   if (!all) return <h3>Loading...</h3>;
 
   return (
       <div>
         <button>Home</button>
 
-        <button>My Network({networkNotificationCount >= 100 ? "99+" : networkNotificationCount})</button>
-        <button>Jobs({jobsNotificationCount})</button>
-        <button>Messaging({messagingNotificationCount})</button>
-        <button>Notification({notifyNotificationCount})</button>
+        <button>My Network ({all.network})</button>
+        <button>Jobs ({all.jobs})</button>
+        <button>Messaging ({all.messaging})</button>
+        <button>Notification ({all.notification})</button>
 
-        <button>Me({totalNotificationCount})</button>
+        <button>Me ({total})</button>
       </div>
   )
 }
 
-export default App
+export default App;
+
 //dir\week7-routes\02-react-recoil
+//make sure server.js file from backend folder is running
