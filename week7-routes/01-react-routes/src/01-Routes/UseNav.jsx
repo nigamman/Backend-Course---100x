@@ -7,7 +7,7 @@ function UseNav() {
     <div>
       <div>
         <BrowserRouter> 
-        <Appbar />
+          <Appbar />
           <Routes>
             <Route path="/dashboard" element={<Dashboard/>} />
             <Route path="/" element={<Landing />} />
@@ -15,7 +15,6 @@ function UseNav() {
         </BrowserRouter>
       </div>
     </div>
-    
   )
 }
 function Appbar() {
