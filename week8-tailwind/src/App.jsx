@@ -5,8 +5,19 @@ import Responsive from "./topics/Responsive";
 
 function App() {
   return (
-    <div>
+    <div> 
+      "FLEX CODE"
       <Flex />
+      
+      <br></br>
+
+      "GRID CODE"
+      <Grid />
+
+      <br></br>
+
+      "RESPONSIVENESS CODE"
+      <Responsive />
     </div>
   );
 }
