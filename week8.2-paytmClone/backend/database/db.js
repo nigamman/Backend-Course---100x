@@ -1,0 +1,39 @@
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://nigamman:Rishi20@100xdevs.bgvyutl.mongodb.net/paytm');
+
+const userSchema = new mongoose.Schema({
+    username: {
+        type: String,
+        require: true
+    },
+    firstName: {
+        type: String,
+        require: true
+    },
+    lastName: {
+        type: String,
+    },
+    password: {
+        type: String,
+        require: true
+    },
+});
+const accountSchema = new mongoose.Schema({
+    userId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        require: true
+    },
+    balance: {
+        type: Number,
+        require: true
+    }
+});
+
+const User = mongoose.model('User', userSchema);
+const Account = mongoose.model('Account', accountSchema);
+
+module.exports = {
+    User, 
+    Account,
+};
